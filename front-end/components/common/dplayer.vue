@@ -29,7 +29,6 @@
 
 <script setup lang="ts">
     import type DPlayer from 'dplayer';
-    import type { Reactive, PropType } from 'vue';
     import type { ContextMenuOptions } from "@/types/common";
 
     const props = defineProps({

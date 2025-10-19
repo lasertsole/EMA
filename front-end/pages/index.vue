@@ -11,10 +11,10 @@
 </template>
 
 <script lang="ts" setup>
-   const carouselProcessArr:string[] = ['/carousel/bg-1.jpg', '/carousel/bg-2.jpg', '/carousel/bg-3.jpg'];
-    definePageMeta({
-        name: 'index'
-    });
+const carouselProcessArr:string[] = ['/carousel/bg-1.jpg', '/carousel/bg-2.jpg', '/carousel/bg-3.jpg'];
+definePageMeta({
+    name: 'index'
+});
 </script>
 
 <style lang="scss" scoped>

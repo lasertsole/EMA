@@ -1,7 +1,7 @@
 // plugins/v-counter.js
 export default defineNuxtPlugin((nuxtApp) => {
     nuxtApp.vueApp.directive('clickOutside', {
-        mounted(el, binding) {
+        mounted(el:any, binding:any) {
             // 指向外部点击事件的处理函数
             function clickOutside(event: MouseEvent) {
                 // 检查点击是否发生在el之外
@@ -15,7 +15,7 @@ export default defineNuxtPlugin((nuxtApp) => {
             // 设置一个反向操作，防止内存泄漏
             el._clickOutside = clickOutside;
         },
-        unmounted(el) {
+        unmounted(el:any) {
             document.removeEventListener('click', el._clickOutside);
             delete el._clickOutside;
         }
